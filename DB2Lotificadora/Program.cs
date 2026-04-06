@@ -16,7 +16,8 @@ namespace DB2Lotificadora
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //Application.Run(new Form1());
+            //hola esto es una preba
         }
     }
 }
