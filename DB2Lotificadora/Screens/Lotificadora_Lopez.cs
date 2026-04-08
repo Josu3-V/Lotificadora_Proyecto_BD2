@@ -28,6 +28,18 @@ namespace DB2Lotificadora.Screens
             this.Close();
         }
 
-        
+        private void Usuarios_Click(object sender, EventArgs e)
+        {
+            Usuarios userForm = new Usuarios();
+            userForm.Show();
+            this.Close();
+        }
+
+        private void btnLotes_Click(object sender, EventArgs e)
+        {
+            Lotes lotesForm = new Lotes();
+            lotesForm.Show();
+            this.Close();
+        }
     }
 }

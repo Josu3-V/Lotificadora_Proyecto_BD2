@@ -67,11 +67,23 @@
     <Compile Include="Screens\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\Lotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Lotes.Designer.cs">
+      <DependentUpon>Lotes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\Lotificadora_Lopez.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Screens\Lotificadora_Lopez.Designer.cs">
       <DependentUpon>Lotificadora_Lopez.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Usuarios.Designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -92,8 +104,14 @@
     <EmbeddedResource Include="Screens\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Lotes.resx">
+      <DependentUpon>Lotes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\Lotificadora_Lopez.resx">
       <DependentUpon>Lotificadora_Lopez.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -128,6 +146,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\pagos.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
