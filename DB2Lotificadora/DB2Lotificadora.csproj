@@ -79,11 +79,29 @@
     <Compile Include="Screens\Lotificadora_Lopez.Designer.cs">
       <DependentUpon>Lotificadora_Lopez.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\nuevousuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\nuevousuarios.Designer.cs">
+      <DependentUpon>nuevousuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Pagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Pagos.Designer.cs">
+      <DependentUpon>Pagos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\Usuarios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Screens\Usuarios.Designer.cs">
       <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Ventas.Designer.cs">
+      <DependentUpon>Ventas.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -110,8 +128,17 @@
     <EmbeddedResource Include="Screens\Lotificadora_Lopez.resx">
       <DependentUpon>Lotificadora_Lopez.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Screens\nuevousuarios.resx">
+      <DependentUpon>nuevousuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Pagos.resx">
+      <DependentUpon>Pagos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Ventas.resx">
+      <DependentUpon>Ventas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -34,21 +34,23 @@
             this.Usuarios = new System.Windows.Forms.Button();
             this.btnLotes = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.btnPagos = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,7 +95,7 @@
             this.Usuarios.FlatAppearance.BorderSize = 0;
             this.Usuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Usuarios.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Usuarios.Location = new System.Drawing.Point(12, 216);
+            this.Usuarios.Location = new System.Drawing.Point(3, 3);
             this.Usuarios.Name = "Usuarios";
             this.Usuarios.Size = new System.Drawing.Size(98, 37);
             this.Usuarios.TabIndex = 11;
@@ -106,7 +108,7 @@
             this.btnLotes.FlatAppearance.BorderSize = 0;
             this.btnLotes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLotes.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLotes.Location = new System.Drawing.Point(327, 216);
+            this.btnLotes.Location = new System.Drawing.Point(3, 115);
             this.btnLotes.Name = "btnLotes";
             this.btnLotes.Size = new System.Drawing.Size(98, 37);
             this.btnLotes.TabIndex = 13;
@@ -119,104 +121,108 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(327, 399);
+            this.button3.Location = new System.Drawing.Point(3, 171);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(98, 37);
             this.button3.TabIndex = 15;
             this.button3.Text = "Ventas";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.btnVentas);
             // 
-            // button4
+            // btnPagos
             // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(12, 399);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(98, 37);
-            this.button4.TabIndex = 17;
-            this.button4.Text = "Pagos";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(132, 135);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(144, 110);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Usuarios\r\n- Nombre\r\n- Lote\r\n- DNI\r\n- Financiamiento";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(454, 130);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(161, 100);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "- Lotes\r\n- Numero de lote\r\n- Ubicacion\r\n- Area";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(127, 318);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 50);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "Pagos\r\n- agua\r\n";
+            this.btnPagos.FlatAppearance.BorderSize = 0;
+            this.btnPagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPagos.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPagos.Location = new System.Drawing.Point(3, 59);
+            this.btnPagos.Name = "btnPagos";
+            this.btnPagos.Size = new System.Drawing.Size(98, 37);
+            this.btnPagos.TabIndex = 17;
+            this.btnPagos.Text = "Pagos";
+            this.btnPagos.UseVisualStyleBackColor = true;
+            this.btnPagos.Click += new System.EventHandler(this.btnPagos_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(440, 296);
+            this.label5.Location = new System.Drawing.Point(3, 224);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(248, 125);
+            this.label5.Size = new System.Drawing.Size(162, 175);
             this.label5.TabIndex = 21;
             this.label5.Text = "Crear y Visualizar Cliennte\r\n- Nombre\r\n- Lote\r\n- DNI\r\n- Financiamiento";
             // 
-            // pictureBox5
+            // flowLayoutPanel1
             // 
-            this.pictureBox5.Image = global::DB2Lotificadora.Properties.Resources.pagos;
-            this.pictureBox5.Location = new System.Drawing.Point(23, 318);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(75, 75);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 16;
-            this.pictureBox5.TabStop = false;
+            this.flowLayoutPanel1.Controls.Add(this.Usuarios);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox2);
+            this.flowLayoutPanel1.Controls.Add(this.btnPagos);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox5);
+            this.flowLayoutPanel1.Controls.Add(this.btnLotes);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox3);
+            this.flowLayoutPanel1.Controls.Add(this.button3);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox4);
+            this.flowLayoutPanel1.Controls.Add(this.label5);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 100);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(169, 461);
+            this.flowLayoutPanel1.TabIndex = 22;
             // 
-            // pictureBox4
+            // panel2
             // 
-            this.pictureBox4.Image = global::DB2Lotificadora.Properties.Resources.sales;
-            this.pictureBox4.Location = new System.Drawing.Point(337, 318);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(75, 75);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 14;
-            this.pictureBox4.TabStop = false;
+            this.panel2.Controls.Add(this.flowLayoutPanel2);
+            this.panel2.Location = new System.Drawing.Point(296, 198);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(448, 260);
+            this.panel2.TabIndex = 23;
             // 
-            // pictureBox3
+            // flowLayoutPanel2
             // 
-            this.pictureBox3.Image = global::DB2Lotificadora.Properties.Resources.map;
-            this.pictureBox3.Location = new System.Drawing.Point(337, 135);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(75, 75);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 12;
-            this.pictureBox3.TabStop = false;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(605, 604);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(367, 245);
+            this.flowLayoutPanel2.TabIndex = 0;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DB2Lotificadora.Properties.Resources.user2;
-            this.pictureBox2.Location = new System.Drawing.Point(21, 135);
+            this.pictureBox2.Location = new System.Drawing.Point(107, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(75, 75);
+            this.pictureBox2.Size = new System.Drawing.Size(50, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::DB2Lotificadora.Properties.Resources.pagos;
+            this.pictureBox5.Location = new System.Drawing.Point(107, 59);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 16;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::DB2Lotificadora.Properties.Resources.map;
+            this.pictureBox3.Location = new System.Drawing.Point(107, 115);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 12;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::DB2Lotificadora.Properties.Resources.sales;
+            this.pictureBox4.Location = new System.Drawing.Point(107, 171);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 14;
+            this.pictureBox4.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -233,18 +239,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 561);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.btnLotes);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.Usuarios);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -254,13 +250,15 @@
             this.Load += new System.EventHandler(this.Lotificadora_Lopez_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -276,11 +274,11 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnPagos;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
     }
 }

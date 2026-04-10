@@ -41,5 +41,20 @@ namespace DB2Lotificadora.Screens
             lotesForm.Show();
             this.Close();
         }
+
+
+        private void btnPagos_Click(object sender, EventArgs e)
+        {
+            Pagos pagosForm = new Pagos();
+            pagosForm.Show();
+            this.Close();
+        }
+
+        private void btnVentas(object sender, EventArgs e)
+        {
+            Ventas ventasForm = new Ventas();
+            ventasForm.Show();
+            this.Close();
+        }
     }
 }
