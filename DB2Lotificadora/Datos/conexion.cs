@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -47,6 +48,58 @@ namespace DB2Lotificadora.Datos
                 Con = new conexion();
             }
             return Con;
+        }
+
+        public DataTable EjecutarConsulta(string query, SqlParameter[] parametros = null)
+        {
+            DataTable dt = new DataTable();
+            using (SqlConnection conn = CrearConexion())
+            {
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.CommandType = CommandType.Text;
+                    if (parametros != null)
+                        cmd.Parameters.AddRange(parametros);
+
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dt);
+                }
+            }
+            return dt;
+        }
+
+        public int EjecutarComando(string nombreProcedimiento, SqlParameter[] parametros = null)
+        {
+            using (SqlConnection conn = CrearConexion())
+            {
+                using (SqlCommand cmd = new SqlCommand(nombreProcedimiento, conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    if (parametros != null)
+                        cmd.Parameters.AddRange(parametros);
+
+                    conn.Open();
+                    return cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public DataTable EjecutarProcedimiento(string nombreProcedimiento, SqlParameter[] parametros = null)
+        {
+            DataTable dt = new DataTable();
+            using (SqlConnection conn = CrearConexion())
+            {
+                using (SqlCommand cmd = new SqlCommand(nombreProcedimiento, conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    if (parametros != null)
+                        cmd.Parameters.AddRange(parametros);
+
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dt);
+                }
+            }
+            return dt;
         }
 
     }
