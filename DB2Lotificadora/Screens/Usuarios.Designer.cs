@@ -35,7 +35,6 @@
             this.txBuscar = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btBuscar = new System.Windows.Forms.Button();
-            this.btnLim = new System.Windows.Forms.Button();
             this.btNuevoUser = new System.Windows.Forms.Button();
             this.tbIngresoMensual = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,14 +48,18 @@
             this.btnElim = new System.Windows.Forms.Button();
             this.btnGuar = new System.Windows.Forms.Button();
             this.btnCance = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tbLote = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.dgvClientesf = new System.Windows.Forms.DataGridView();
+            this.tbTelefono = new System.Windows.Forms.TextBox();
+            this.Telefono = new System.Windows.Forms.Label();
             this.tbId = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.tbDeuda = new System.Windows.Forms.TextBox();
+            this.deuda = new System.Windows.Forms.Label();
+            this.tbEvaluacion = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClientesf)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -107,7 +110,7 @@
             // 
             // txBuscar
             // 
-            this.txBuscar.Location = new System.Drawing.Point(103, 414);
+            this.txBuscar.Location = new System.Drawing.Point(102, 379);
             this.txBuscar.Name = "txBuscar";
             this.txBuscar.Size = new System.Drawing.Size(347, 20);
             this.txBuscar.TabIndex = 5;
@@ -116,7 +119,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(60, 417);
+            this.label2.Location = new System.Drawing.Point(59, 382);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 6;
@@ -124,22 +127,13 @@
             // 
             // btBuscar
             // 
-            this.btBuscar.Location = new System.Drawing.Point(456, 414);
+            this.btBuscar.Location = new System.Drawing.Point(455, 379);
             this.btBuscar.Name = "btBuscar";
             this.btBuscar.Size = new System.Drawing.Size(75, 23);
             this.btBuscar.TabIndex = 7;
             this.btBuscar.Text = "Buscar";
             this.btBuscar.UseVisualStyleBackColor = true;
             this.btBuscar.Click += new System.EventHandler(this.btBuscar_Click);
-            // 
-            // btnLim
-            // 
-            this.btnLim.Location = new System.Drawing.Point(770, 272);
-            this.btnLim.Name = "btnLim";
-            this.btnLim.Size = new System.Drawing.Size(136, 23);
-            this.btnLim.TabIndex = 8;
-            this.btnLim.Text = "Limpiar";
-            this.btnLim.UseVisualStyleBackColor = true;
             // 
             // btNuevoUser
             // 
@@ -201,15 +195,15 @@
             // 
             // tbNombre
             // 
-            this.tbNombre.Location = new System.Drawing.Point(161, 125);
+            this.tbNombre.Location = new System.Drawing.Point(319, 128);
             this.tbNombre.Name = "tbNombre";
-            this.tbNombre.Size = new System.Drawing.Size(469, 20);
+            this.tbNombre.Size = new System.Drawing.Size(390, 20);
             this.tbNombre.TabIndex = 16;
             // 
             // txtUsuario
             // 
             this.txtUsuario.AutoSize = true;
-            this.txtUsuario.Location = new System.Drawing.Point(56, 128);
+            this.txtUsuario.Location = new System.Drawing.Point(261, 133);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(44, 13);
             this.txtUsuario.TabIndex = 15;
@@ -243,6 +237,7 @@
             this.btnGuar.TabIndex = 25;
             this.btnGuar.Text = "Guardar";
             this.btnGuar.UseVisualStyleBackColor = true;
+            this.btnGuar.Click += new System.EventHandler(this.btnGuar_Click);
             // 
             // btnCance
             // 
@@ -252,61 +247,102 @@
             this.btnCance.TabIndex = 26;
             this.btnCance.Text = "Cancelar";
             this.btnCance.UseVisualStyleBackColor = true;
+            this.btnCance.Click += new System.EventHandler(this.btnCance_Click);
             // 
-            // dataGridView1
+            // dgvClientesf
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 458);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(960, 91);
-            this.dataGridView1.TabIndex = 27;
+            this.dgvClientesf.AllowUserToAddRows = false;
+            this.dgvClientesf.AllowUserToDeleteRows = false;
+            this.dgvClientesf.AllowUserToOrderColumns = true;
+            this.dgvClientesf.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvClientesf.Location = new System.Drawing.Point(12, 433);
+            this.dgvClientesf.Name = "dgvClientesf";
+            this.dgvClientesf.ReadOnly = true;
+            this.dgvClientesf.Size = new System.Drawing.Size(960, 116);
+            this.dgvClientesf.TabIndex = 27;
+            this.dgvClientesf.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClientesf_CellContentClick);
             // 
-            // tbLote
+            // tbTelefono
             // 
-            this.tbLote.Location = new System.Drawing.Point(164, 279);
-            this.tbLote.Name = "tbLote";
-            this.tbLote.Size = new System.Drawing.Size(220, 20);
-            this.tbLote.TabIndex = 29;
+            this.tbTelefono.Location = new System.Drawing.Point(489, 205);
+            this.tbTelefono.Name = "tbTelefono";
+            this.tbTelefono.Size = new System.Drawing.Size(220, 20);
+            this.tbTelefono.TabIndex = 29;
             // 
-            // label6
+            // Telefono
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(59, 282);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(28, 13);
-            this.label6.TabIndex = 28;
-            this.label6.Text = "Lote";
+            this.Telefono.AutoSize = true;
+            this.Telefono.Location = new System.Drawing.Point(412, 208);
+            this.Telefono.Name = "Telefono";
+            this.Telefono.Size = new System.Drawing.Size(49, 13);
+            this.Telefono.TabIndex = 28;
+            this.Telefono.Text = "Telefono";
             // 
             // tbId
             // 
-            this.tbId.Location = new System.Drawing.Point(161, 99);
+            this.tbId.Location = new System.Drawing.Point(164, 130);
             this.tbId.Name = "tbId";
-            this.tbId.Size = new System.Drawing.Size(469, 20);
+            this.tbId.ReadOnly = true;
+            this.tbId.Size = new System.Drawing.Size(59, 20);
             this.tbId.TabIndex = 31;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(56, 102);
+            this.label7.Location = new System.Drawing.Point(59, 133);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(16, 13);
             this.label7.TabIndex = 30;
             this.label7.Text = "Id";
+            // 
+            // tbDeuda
+            // 
+            this.tbDeuda.Location = new System.Drawing.Point(162, 278);
+            this.tbDeuda.Name = "tbDeuda";
+            this.tbDeuda.ReadOnly = true;
+            this.tbDeuda.Size = new System.Drawing.Size(220, 20);
+            this.tbDeuda.TabIndex = 33;
+            // 
+            // deuda
+            // 
+            this.deuda.AutoSize = true;
+            this.deuda.Location = new System.Drawing.Point(57, 281);
+            this.deuda.Name = "deuda";
+            this.deuda.Size = new System.Drawing.Size(96, 13);
+            this.deuda.TabIndex = 32;
+            this.deuda.Text = "Deudad Pendiente";
+            // 
+            // tbEvaluacion
+            // 
+            this.tbEvaluacion.Location = new System.Drawing.Point(517, 282);
+            this.tbEvaluacion.Name = "tbEvaluacion";
+            this.tbEvaluacion.ReadOnly = true;
+            this.tbEvaluacion.Size = new System.Drawing.Size(220, 20);
+            this.tbEvaluacion.TabIndex = 35;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(412, 285);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(103, 13);
+            this.label8.TabIndex = 34;
+            this.label8.Text = "Evaluacion de Pago";
             // 
             // Usuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 561);
+            this.Controls.Add(this.tbEvaluacion);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.tbDeuda);
+            this.Controls.Add(this.deuda);
             this.Controls.Add(this.tbId);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.tbLote);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.tbTelefono);
+            this.Controls.Add(this.Telefono);
+            this.Controls.Add(this.dgvClientesf);
             this.Controls.Add(this.btnCance);
             this.Controls.Add(this.btnGuar);
             this.Controls.Add(this.btnElim);
@@ -320,7 +356,6 @@
             this.Controls.Add(this.tbNombre);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.btNuevoUser);
-            this.Controls.Add(this.btnLim);
             this.Controls.Add(this.btBuscar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txBuscar);
@@ -334,7 +369,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClientesf)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -349,7 +384,6 @@
         private System.Windows.Forms.TextBox txBuscar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btBuscar;
-        private System.Windows.Forms.Button btnLim;
         private System.Windows.Forms.Button btNuevoUser;
         private System.Windows.Forms.TextBox tbIngresoMensual;
         private System.Windows.Forms.Label label3;
@@ -363,10 +397,14 @@
         private System.Windows.Forms.Button btnElim;
         private System.Windows.Forms.Button btnGuar;
         private System.Windows.Forms.Button btnCance;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox tbLote;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DataGridView dgvClientesf;
+        private System.Windows.Forms.TextBox tbTelefono;
+        private System.Windows.Forms.Label Telefono;
         private System.Windows.Forms.TextBox tbId;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox tbDeuda;
+        private System.Windows.Forms.Label deuda;
+        private System.Windows.Forms.TextBox tbEvaluacion;
+        private System.Windows.Forms.Label label8;
     }
 }

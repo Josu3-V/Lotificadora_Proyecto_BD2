@@ -54,16 +54,14 @@ namespace DB2Lotificadora.Datos
         {
             DataTable dt = new DataTable();
             using (SqlConnection conn = CrearConexion())
+            using (SqlCommand cmd = new SqlCommand(query, conn))
             {
-                using (SqlCommand cmd = new SqlCommand(query, conn))
-                {
-                    cmd.CommandType = CommandType.Text;
-                    if (parametros != null)
-                        cmd.Parameters.AddRange(parametros);
+                cmd.CommandType = CommandType.Text;
+                if (parametros != null)
+                    cmd.Parameters.AddRange(parametros);
 
-                    SqlDataAdapter da = new SqlDataAdapter(cmd);
-                    da.Fill(dt);
-                }
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
             }
             return dt;
         }
@@ -71,16 +69,15 @@ namespace DB2Lotificadora.Datos
         public int EjecutarComando(string nombreProcedimiento, SqlParameter[] parametros = null)
         {
             using (SqlConnection conn = CrearConexion())
+            using (SqlCommand cmd = new SqlCommand(nombreProcedimiento, conn))
             {
-                using (SqlCommand cmd = new SqlCommand(nombreProcedimiento, conn))
-                {
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    if (parametros != null)
-                        cmd.Parameters.AddRange(parametros);
+                cmd.CommandType = CommandType.StoredProcedure;
+                if (parametros != null)
+                    cmd.Parameters.AddRange(parametros);
 
-                    conn.Open();
-                    return cmd.ExecuteNonQuery();
-                }
+                conn.Open();
+                return cmd.ExecuteNonQuery();
+                
             }
         }
 
@@ -88,18 +85,30 @@ namespace DB2Lotificadora.Datos
         {
             DataTable dt = new DataTable();
             using (SqlConnection conn = CrearConexion())
+            using (SqlCommand cmd = new SqlCommand(nombreProcedimiento, conn))
             {
-                using (SqlCommand cmd = new SqlCommand(nombreProcedimiento, conn))
-                {
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    if (parametros != null)
-                        cmd.Parameters.AddRange(parametros);
+                cmd.CommandType = CommandType.StoredProcedure;
+                if (parametros != null)
+                    cmd.Parameters.AddRange(parametros);
 
-                    SqlDataAdapter da = new SqlDataAdapter(cmd);
-                    da.Fill(dt);
-                }
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
             }
             return dt;
+        }
+
+        public object EjecutarEscalar(string query, SqlParameter[] parametros = null)
+        {
+            using (SqlConnection conn = CrearConexion())
+            using (SqlCommand cmd = new SqlCommand(query, conn))
+            {
+                cmd.CommandType = CommandType.Text;
+                if (parametros != null)
+                    cmd.Parameters.AddRange(parametros);
+
+                conn.Open();
+                return cmd.ExecuteScalar();
+            }
         }
 
     }
