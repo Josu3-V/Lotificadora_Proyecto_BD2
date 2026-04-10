@@ -18,10 +18,10 @@ namespace DB2Lotificadora.Datos
 
         private conexion()
         {
-            this.Base = "DB20202001796";//base de datos la que se creo las tablas, trigguer
+            this.Base = "DB20222030646";//base de datos la que se creo las tablas, trigguer
             this.Servidor = "3.128.144.165";//servidor de la base de datos el primero que aparece en desktop
-            this.Usuario = "milthon.garcia";//usuario de la base de datos eje pepe2020
-            this.Password = "MG20202001796"; //la que borjas proporciono u otra
+            this.Usuario = "eddie.merino";//usuario de la base de datos eje pepe2020
+            this.Password = "EM20222030646"; //la que borjas proporciono u otra
         }
         public SqlConnection CrearConexion()
         {
