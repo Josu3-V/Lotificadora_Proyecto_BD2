@@ -37,18 +37,24 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnMora = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btnplanpagos = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dgvPrincipal = new System.Windows.Forms.DataGridView();
+            this.btnlotesetapa = new System.Windows.Forms.Button();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrincipal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -159,6 +165,10 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.SeaGreen;
+            this.panel2.Controls.Add(this.pictureBox6);
+            this.panel2.Controls.Add(this.btnlotesetapa);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.btnMora);
             this.panel2.Controls.Add(this.pictureBox5);
             this.panel2.Controls.Add(this.btnplanpagos);
             this.panel2.Controls.Add(this.pictureBox3);
@@ -170,6 +180,32 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(138, 461);
             this.panel2.TabIndex = 16;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox2.Image = global::DB2Lotificadora.Properties.Resources.pagos;
+            this.pictureBox2.Location = new System.Drawing.Point(88, 215);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(47, 49);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 19;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnMora
+            // 
+            this.btnMora.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnMora.FlatAppearance.BorderSize = 0;
+            this.btnMora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMora.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMora.ForeColor = System.Drawing.Color.White;
+            this.btnMora.Location = new System.Drawing.Point(-1, 215);
+            this.btnMora.Name = "btnMora";
+            this.btnMora.Size = new System.Drawing.Size(98, 49);
+            this.btnMora.TabIndex = 18;
+            this.btnMora.Text = "Pagos en Mora";
+            this.btnMora.UseVisualStyleBackColor = false;
+            this.btnMora.Click += new System.EventHandler(this.btnMora_Click);
             // 
             // pictureBox5
             // 
@@ -219,6 +255,33 @@
             this.dgvPrincipal.Size = new System.Drawing.Size(846, 461);
             this.dgvPrincipal.TabIndex = 1;
             // 
+            // btnlotesetapa
+            // 
+            this.btnlotesetapa.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnlotesetapa.FlatAppearance.BorderSize = 0;
+            this.btnlotesetapa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnlotesetapa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlotesetapa.ForeColor = System.Drawing.Color.White;
+            this.btnlotesetapa.Location = new System.Drawing.Point(-1, 296);
+            this.btnlotesetapa.Name = "btnlotesetapa";
+            this.btnlotesetapa.Size = new System.Drawing.Size(139, 57);
+            this.btnlotesetapa.TabIndex = 20;
+            this.btnlotesetapa.Text = "Lotes por \r\nEtapa";
+            this.btnlotesetapa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnlotesetapa.UseVisualStyleBackColor = false;
+            this.btnlotesetapa.Click += new System.EventHandler(this.btnlotesetapa_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox6.Image = global::DB2Lotificadora.Properties.Resources.map;
+            this.pictureBox6.Location = new System.Drawing.Point(84, 296);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(58, 57);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 21;
+            this.pictureBox6.TabStop = false;
+            // 
             // Lotificadora_Gomez
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -237,9 +300,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrincipal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -260,5 +325,9 @@
         private System.Windows.Forms.DataGridView dgvPrincipal;
         private System.Windows.Forms.Button btnplanpagos;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnMora;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Button btnlotesetapa;
     }
 }

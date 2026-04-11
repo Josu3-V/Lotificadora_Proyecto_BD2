@@ -56,11 +56,19 @@
     <Compile Include="Screens\calculo_plandepago.Designer.cs">
       <DependentUpon>calculo_plandepago.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Screens\GastosDeProyecto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Screens\GastosDeProyecto.Designer.cs">
       <DependentUpon>GastosDeProyecto.cs</DependentUpon>
+=======
+    <Compile Include="Screens\lotesporetapas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\lotesporetapas.Designer.cs">
+      <DependentUpon>lotesporetapas.cs</DependentUpon>
+>>>>>>> cb24adc4618a38632ec3f601a987a14bbca15d78
     </Compile>
     <Compile Include="Screens\Lotificadora_Gomez.cs">
       <SubType>Form</SubType>
@@ -155,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\Lotes.resx">
       <DependentUpon>Lotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\lotesporetapas.resx">
+      <DependentUpon>lotesporetapas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\Lotificadora_Gomez.resx">
       <DependentUpon>Lotificadora_Gomez.cs</DependentUpon>

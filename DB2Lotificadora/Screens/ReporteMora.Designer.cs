@@ -141,34 +141,34 @@
             this.dgvMora.Location = new System.Drawing.Point(22, 366);
             this.dgvMora.Name = "dgvMora";
             this.dgvMora.ReadOnly = true;
-            this.dgvMora.Size = new System.Drawing.Size(921, 170);
+            this.dgvMora.Size = new System.Drawing.Size(962, 170);
             this.dgvMora.TabIndex = 7;
             // 
             // tbCMora
             // 
             this.tbCMora.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold);
-            this.tbCMora.Location = new System.Drawing.Point(79, 260);
+            this.tbCMora.Location = new System.Drawing.Point(45, 260);
             this.tbCMora.Name = "tbCMora";
             this.tbCMora.ReadOnly = true;
-            this.tbCMora.Size = new System.Drawing.Size(112, 32);
+            this.tbCMora.Size = new System.Drawing.Size(168, 32);
             this.tbCMora.TabIndex = 8;
             // 
             // btTTCVencida
             // 
             this.btTTCVencida.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btTTCVencida.Location = new System.Drawing.Point(366, 260);
+            this.btTTCVencida.Location = new System.Drawing.Point(310, 260);
             this.btTTCVencida.Name = "btTTCVencida";
             this.btTTCVencida.ReadOnly = true;
-            this.btTTCVencida.Size = new System.Drawing.Size(112, 32);
+            this.btTTCVencida.Size = new System.Drawing.Size(243, 32);
             this.btTTCVencida.TabIndex = 9;
             // 
             // tbMTMora
             // 
             this.tbMTMora.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold);
-            this.tbMTMora.Location = new System.Drawing.Point(684, 260);
+            this.tbMTMora.Location = new System.Drawing.Point(626, 260);
             this.tbMTMora.Name = "tbMTMora";
             this.tbMTMora.ReadOnly = true;
-            this.tbMTMora.Size = new System.Drawing.Size(112, 32);
+            this.tbMTMora.Size = new System.Drawing.Size(206, 32);
             this.tbMTMora.TabIndex = 10;
             // 
             // ReporteMora
