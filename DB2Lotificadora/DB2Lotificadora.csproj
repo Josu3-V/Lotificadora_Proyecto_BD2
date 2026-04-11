@@ -104,6 +104,12 @@
     <Compile Include="Screens\Pagos.Designer.cs">
       <DependentUpon>Pagos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\ReporteMora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\ReporteMora.Designer.cs">
+      <DependentUpon>ReporteMora.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\Usuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\Pagos.resx">
       <DependentUpon>Pagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ReporteMora.resx">
+      <DependentUpon>ReporteMora.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>

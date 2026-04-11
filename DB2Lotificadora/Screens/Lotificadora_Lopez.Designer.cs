@@ -118,7 +118,7 @@
             this.btnLotes.FlatAppearance.BorderSize = 0;
             this.btnLotes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLotes.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLotes.Location = new System.Drawing.Point(3, 115);
+            this.btnLotes.Location = new System.Drawing.Point(3, 124);
             this.btnLotes.Name = "btnLotes";
             this.btnLotes.Size = new System.Drawing.Size(98, 37);
             this.btnLotes.TabIndex = 13;
@@ -131,7 +131,7 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(3, 171);
+            this.button3.Location = new System.Drawing.Point(3, 180);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(98, 37);
             this.button3.TabIndex = 15;
@@ -146,9 +146,9 @@
             this.btnPagos.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPagos.Location = new System.Drawing.Point(3, 59);
             this.btnPagos.Name = "btnPagos";
-            this.btnPagos.Size = new System.Drawing.Size(98, 37);
+            this.btnPagos.Size = new System.Drawing.Size(98, 59);
             this.btnPagos.TabIndex = 17;
-            this.btnPagos.Text = "Pagos";
+            this.btnPagos.Text = "Reporte\r\nPago";
             this.btnPagos.UseVisualStyleBackColor = true;
             this.btnPagos.Click += new System.EventHandler(this.btnPagos_Click);
             // 
@@ -156,7 +156,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 224);
+            this.label5.Location = new System.Drawing.Point(3, 233);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(162, 175);
             this.label5.TabIndex = 21;
@@ -202,7 +202,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::DB2Lotificadora.Properties.Resources.map;
-            this.pictureBox3.Location = new System.Drawing.Point(107, 115);
+            this.pictureBox3.Location = new System.Drawing.Point(107, 124);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(50, 50);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -212,7 +212,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::DB2Lotificadora.Properties.Resources.sales;
-            this.pictureBox4.Location = new System.Drawing.Point(107, 171);
+            this.pictureBox4.Location = new System.Drawing.Point(107, 180);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(50, 50);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
