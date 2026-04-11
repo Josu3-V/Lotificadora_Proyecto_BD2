@@ -38,5 +38,12 @@ namespace DB2Lotificadora.Screens
             lottForm.Show();
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Lotificadora_Gomez lottForm = new Lotificadora_Gomez();
+            lottForm.Show();
+            this.Close();
+        }
     }
 }
