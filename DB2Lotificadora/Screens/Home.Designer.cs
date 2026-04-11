@@ -88,9 +88,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label1.Location = new System.Drawing.Point(345, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(254, 41);
+            this.label1.Size = new System.Drawing.Size(219, 41);
             this.label1.TabIndex = 1;
-            this.label1.Text = "LOTIFICADORA";
+            this.label1.Text = "BIENVENIDO";
             // 
             // panel2
             // 
@@ -122,6 +122,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "INGRESAR";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label3
             // 
@@ -130,9 +131,9 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label3.Location = new System.Drawing.Point(22, 16);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(262, 82);
+            this.label3.Size = new System.Drawing.Size(278, 41);
             this.label3.TabIndex = 2;
-            this.label3.Text = "LOTIFICADORA \r\n       GOMEZ";
+            this.label3.Text = "Visualizar Datos";
             // 
             // groupBox1
             // 
@@ -162,9 +163,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label2.Location = new System.Drawing.Point(22, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(262, 82);
+            this.label2.Size = new System.Drawing.Size(253, 41);
             this.label2.TabIndex = 2;
-            this.label2.Text = "LOTIFICADORA \r\n       LOPEZ";
+            this.label2.Text = "Ingresar Datos";
             // 
             // Home
             // 
