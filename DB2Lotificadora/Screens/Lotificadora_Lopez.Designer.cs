@@ -96,9 +96,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label1.Location = new System.Drawing.Point(303, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(364, 41);
+            this.label1.Size = new System.Drawing.Size(302, 41);
             this.label1.TabIndex = 1;
-            this.label1.Text = "LOTIFICADORA LOPEZ";
+            this.label1.Text = "Registro de  Datos";
             // 
             // Usuarios
             // 

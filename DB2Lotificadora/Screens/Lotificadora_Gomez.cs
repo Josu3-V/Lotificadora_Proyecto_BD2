@@ -106,5 +106,12 @@ namespace DB2Lotificadora.Screens
                 MessageBox.Show("Error al cargar ventas por proyecto: " + ex.Message);
             }
         }
+
+        private void btnplanpagos_Click(object sender, EventArgs e)
+        {
+            calculo_plandepago homeForm = new calculo_plandepago();
+            homeForm.Show();
+            this.Close();
+        }
     }
 }

@@ -50,6 +50,12 @@
     <Compile Include="Datos\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screens\calculo_plandepago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\calculo_plandepago.Designer.cs">
+      <DependentUpon>calculo_plandepago.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\Lotificadora_Gomez.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Screens\calculo_plandepago.resx">
+      <DependentUpon>calculo_plandepago.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\frConectar.resx">
       <DependentUpon>frConectar.cs</DependentUpon>
     </EmbeddedResource>

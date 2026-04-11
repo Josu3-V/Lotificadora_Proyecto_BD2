@@ -37,6 +37,8 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.btnplanpagos = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dgvPrincipal = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
@@ -44,6 +46,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrincipal)).BeginInit();
             this.SuspendLayout();
@@ -156,6 +159,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.SeaGreen;
+            this.panel2.Controls.Add(this.pictureBox5);
+            this.panel2.Controls.Add(this.btnplanpagos);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.btnLotes);
@@ -165,6 +170,33 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(138, 461);
             this.panel2.TabIndex = 16;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox5.Image = global::DB2Lotificadora.Properties.Resources.pagos;
+            this.pictureBox5.Location = new System.Drawing.Point(91, 142);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(47, 43);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 17;
+            this.pictureBox5.TabStop = false;
+            // 
+            // btnplanpagos
+            // 
+            this.btnplanpagos.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnplanpagos.FlatAppearance.BorderSize = 0;
+            this.btnplanpagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnplanpagos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnplanpagos.ForeColor = System.Drawing.Color.White;
+            this.btnplanpagos.Location = new System.Drawing.Point(0, 142);
+            this.btnplanpagos.Name = "btnplanpagos";
+            this.btnplanpagos.Size = new System.Drawing.Size(97, 43);
+            this.btnplanpagos.TabIndex = 16;
+            this.btnplanpagos.Text = "Plan pago";
+            this.btnplanpagos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnplanpagos.UseVisualStyleBackColor = false;
+            this.btnplanpagos.Click += new System.EventHandler(this.btnplanpagos_Click);
             // 
             // panel3
             // 
@@ -205,6 +237,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrincipal)).EndInit();
             this.ResumeLayout(false);
@@ -225,5 +258,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView dgvPrincipal;
+        private System.Windows.Forms.Button btnplanpagos;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }
