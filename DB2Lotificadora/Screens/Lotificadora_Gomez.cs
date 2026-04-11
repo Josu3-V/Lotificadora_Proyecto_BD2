@@ -29,12 +29,7 @@ namespace DB2Lotificadora.Screens
             this.Close();
         }
 
-        private void Usuarios_Click(object sender, EventArgs e)
-        {
-            Usuarios userForm = new Usuarios();
-            userForm.Show();
-            this.Close();
-        }
+    
 
         private void btnLotes_Click(object sender, EventArgs e)
         {
@@ -63,14 +58,6 @@ namespace DB2Lotificadora.Screens
             {
                 MessageBox.Show("Error al cargar lotes disponibles: " + ex.Message);
             }
-        }
-
-
-        private void btnPagos_Click(object sender, EventArgs e)
-        {
-            Pagos pagosForm = new Pagos();
-            pagosForm.Show();
-            this.Close();
         }
 
         private void btnVentas(object sender, EventArgs e)
@@ -111,6 +98,20 @@ namespace DB2Lotificadora.Screens
         {
             calculo_plandepago homeForm = new calculo_plandepago();
             homeForm.Show();
+            this.Close();
+        }
+
+        private void btnMora_Click(object sender, EventArgs e)
+        {
+            ReporteMora ReporteMoraForm = new ReporteMora();
+            ReporteMoraForm.Show();
+            this.Close();
+        }
+
+        private void btnlotesetapa_Click(object sender, EventArgs e)
+        {
+            lotesporetapas lotesporetapasForm = new lotesporetapas();
+            lotesporetapasForm.Show();
             this.Close();
         }
     }

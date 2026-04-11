@@ -91,8 +91,8 @@ namespace DB2Lotificadora.Screens
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
-            Lotificadora_Lopez lotlopez = new Lotificadora_Lopez();
-            lotlopez.Show();
+            Lotificadora_Gomez lotgomez = new Lotificadora_Gomez();
+            lotgomez.Show();
             this.Close();
         }
     }

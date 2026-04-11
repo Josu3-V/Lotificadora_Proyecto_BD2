@@ -45,9 +45,7 @@ namespace DB2Lotificadora.Screens
 
         private void btnPagos_Click(object sender, EventArgs e)
         {
-            ReporteMora ReporteMoraForm = new ReporteMora();
-            ReporteMoraForm.Show();
-            this.Close();
+            
         }
 
         private void btnVentas(object sender, EventArgs e)
