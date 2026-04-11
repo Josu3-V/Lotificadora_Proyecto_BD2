@@ -187,6 +187,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "ReporteMora";
             this.Text = "ReporteMora";
+            this.Load += new System.EventHandler(this.ReporteMora_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

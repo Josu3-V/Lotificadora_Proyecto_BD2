@@ -36,7 +36,6 @@
             this.btnLotes = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.btnPagos = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -133,9 +132,9 @@
             this.button3.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(3, 180);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(98, 37);
+            this.button3.Size = new System.Drawing.Size(98, 78);
             this.button3.TabIndex = 15;
-            this.button3.Text = "Ventas";
+            this.button3.Text = "Gastos De\r\nProyectos";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.btnVentas);
             // 
@@ -152,16 +151,6 @@
             this.btnPagos.UseVisualStyleBackColor = true;
             this.btnPagos.Click += new System.EventHandler(this.btnPagos_Click);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 233);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(162, 175);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "Crear y Visualizar Cliennte\r\n- Nombre\r\n- Lote\r\n- DNI\r\n- Financiamiento";
-            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.Usuarios);
@@ -172,7 +161,6 @@
             this.flowLayoutPanel1.Controls.Add(this.pictureBox3);
             this.flowLayoutPanel1.Controls.Add(this.button3);
             this.flowLayoutPanel1.Controls.Add(this.pictureBox4);
-            this.flowLayoutPanel1.Controls.Add(this.label5);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 100);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -252,7 +240,6 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -276,7 +263,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button btnPagos;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;

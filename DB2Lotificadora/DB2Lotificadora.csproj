@@ -56,6 +56,12 @@
     <Compile Include="Screens\calculo_plandepago.Designer.cs">
       <DependentUpon>calculo_plandepago.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\GastosDeProyecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\GastosDeProyecto.Designer.cs">
+      <DependentUpon>GastosDeProyecto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\Lotificadora_Gomez.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\frConectar.resx">
       <DependentUpon>frConectar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\GastosDeProyecto.resx">
+      <DependentUpon>GastosDeProyecto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>

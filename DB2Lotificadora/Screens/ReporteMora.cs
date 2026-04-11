@@ -95,5 +95,10 @@ namespace DB2Lotificadora.Screens
             lotlopez.Show();
             this.Close();
         }
+
+        private void ReporteMora_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

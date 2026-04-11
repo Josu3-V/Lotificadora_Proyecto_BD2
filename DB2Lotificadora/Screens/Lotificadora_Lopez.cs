@@ -52,8 +52,8 @@ namespace DB2Lotificadora.Screens
 
         private void btnVentas(object sender, EventArgs e)
         {
-            Ventas ventasForm = new Ventas();
-            ventasForm.Show();
+            GastosDeProyecto GDProyectoForm = new GastosDeProyecto();
+            GDProyectoForm.Show();
             this.Close();
         }
     }
